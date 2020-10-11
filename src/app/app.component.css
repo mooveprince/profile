@@ -1,0 +1,7 @@
+.ui.items>.item {
+    margin-bottom: 2em;
+}
+
+.ui.secondary.inverted.menu {
+    background-color: #1b1c1d;
+}
