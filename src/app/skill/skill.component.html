@@ -1,0 +1,19 @@
+<div class="ui vertical stripe segment container">
+    <div class="ui middle aligned stackable grid">
+      <div class="row">
+        <h1 class="ui header">Skills</h1>
+      </div>
+      <div class="ui equal width stackable internally celled grid">
+        <div class="center aligned row">
+
+          <div *ngFor="let skill of skills" class="column">
+            <h3> {{ skill.name }}</h3>
+            <div *ngFor = "let desc of skill.description" class="ui bulleted list">
+            <div class="item" [innerHTML]="desc">
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
