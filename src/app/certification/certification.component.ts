@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CertificationComponent implements OnInit {
 
+  certifications = [
+    {
+      name: 'Certified Java Developer',
+      icon: 'assets/javacerti.png'
+    },
+    {
+      name: 'Carrier Ethernet Certified Professional',
+      icon: 'assets/MEFcertifi.png'
+    }
+  ]
+
   constructor() { }
 
   ngOnInit() {

@@ -6,18 +6,11 @@
     </div>
     <div class="ui equal width stackable internally celled grid">
         <div class="center aligned row">
-          <div class="column">
-              <h3>Certified Java Developer</h3>
-              <p>
-                <img src="assets/javacerti.png" class="ui centered image"> 
-                <span></span>
-              </p>
-          </div>
-          <div class="column">
-              <h3>Carrier Ethernet Certified Professional</h3>
-              <p>
-                <img src="assets/MEFcertifi.png" class="ui centered image">
-              </p>
+          <div *ngFor = "let certificate of certifications" class="column">
+            <h3> {{ certificate.name }}</h3>
+            <p>
+              <img src="{{ certificate.icon }}" class="ui centered image"> 
+            </p>
           </div>
         </div>
       </div>
