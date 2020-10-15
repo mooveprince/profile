@@ -31,7 +31,7 @@ export class SkillComponent implements OnInit {
     {
       name: 'Misc',
       description: [
-        'Well versed in writing complex <b>SQLs</b>',
+        'Well versed in writing <b>SQLs</b>',
         'Automation using <b>BASH and Python</b> Scripts',
         'Exposure to <b>Elasticsearch</b>',
         'Web design using <b>Bootstrap and Semantic UI</b>'
