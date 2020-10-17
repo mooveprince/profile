@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  mobile = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  checkMobile() {
+    this.mobile = !this.mobile;
   }
 
 }

@@ -10,7 +10,7 @@
     </div>
   </div>
   
-  <div class="ui vertical inverted sidebar menu left">
+  <div class="ui vertical inverted sidebar menu left" [class.visible]="mobile== true" (click)="checkMobile()">
     <a class="active item" href="#">Home</a>
     <a class="item" href="#skill">Skills</a>
     <a class="item" href="#project">Projects</a>
@@ -23,10 +23,12 @@
 <div class="ui inverted vertical masthead center aligned segment">
 
     <div class="ui container">
+      <div class="ui large secondary inverted pointing menu" >
+          <a class="toc item" (click)="checkMobile()">
+              <i class="sidebar icon"></i>
+          </a>
+      </div>
       <div class="ui large fixed secondary inverted pointing menu">
-        <a class="toc item">
-          <i class="sidebar icon"></i>
-        </a>
         <div class="item">
             <a class="item" href="#">
                 <i class="fas fa-laptop-code" aria-hidden="true" style="color:#DDDDDD; font-size:1.7em;"></i>

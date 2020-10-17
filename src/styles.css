@@ -64,6 +64,25 @@
     display: none;
 }
 
+.ui.visible.left.sidebar ~ .fixed, .ui.visible.left.sidebar ~ .pusher {  
+     -webkit-transform: translate3d(260px, 0, 0);           
+     transform: translate3d(260px, 0, 0); 
+}
+
+.pushable > .pusher:after {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 500ms;
+    transition: opacity 500ms;
+    will-change: opacity;
+    z-index: 1000;
+}
+
 @media only screen and (max-width: 700px) 
 {
     .ui.fixed.menu {
