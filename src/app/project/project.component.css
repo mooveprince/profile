@@ -1,7 +1,14 @@
 .ui.vertical.stripe p {
-    font-size: 1.15em;
+    font-size: 1.2em;
 }
 
 .item {
     margin-bottom: 3em !important;
+}
+
+@media only screen and (max-width: 700px) 
+{
+    p {
+        text-align: left;
+    }
 }

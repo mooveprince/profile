@@ -25,10 +25,10 @@ export class ProjectComponent implements OnInit {
       duration: 'Mar \'17 - May \'19',
       role: 'Tech Lead',
       description:
-      `BAAIS is Broadband Activation and Access Inventory System.
-       Lead the development and adoption of Metro Ethernet Standard in provisioning of Layer 2 elements like Switches and NIDs.
+      `BAAIS is Broadband Activation and Access Inventory System involved in provisioning of Layer 2 elements like Switches and NIDs.
+       Lead the development and adoption of Metro Ethernet Standard features across the network.
        Migrated microservices from PCF to K8s after dockerzing them.
-       Modernization of C++/JSP code to Spring Boot, OSB and Angular `
+       Modernization of C++/JSP code to Spring Boot, OSB and Angular. `
     },
     {
       name: 'TechManager',
@@ -37,12 +37,12 @@ export class ProjectComponent implements OnInit {
       role: 'Tech Lead',
       description:
         `Development of repair, refurbishment and logistics services to technology manufacturers like Lenovo, Getac, Toshiba.
-         Full stack development using CanJs, REST, SOAP, Oracle Repair Depot EBS `
+         Full stack development using CanJs, REST, SOAP, Oracle Repair Depot EBS. `
     },
     {
       name: 'Previous Experiences',
       description:
-        `Senior Backend Developer in MasterCard Payment Gateway project from 2010.
+        `Senior Backend Developer in MasterCard Payment Gateway project from 2010-13.
          Developer in Verizon Business Order Manager project from 2008-10. `
     }
   ];
