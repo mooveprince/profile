@@ -5,41 +5,15 @@
       </div>
       <div class="row">
           <div class="ui items">
-              <div class="item">
+            <div *ngFor="let project of projects" class="item">
                 <div class="content">
-                  <div class="header">Arrowhead Valley Camp</div>
-                  <div class="meta">
-                    <span class="price">$1200</span>
-                    <span class="stay">1 Month</span>
+                    <div class="header">{{ project.name }} - {{ project.company }}</div>
+                    <div class="meta"><span class="role">{{ project.role }}</span></div>
+                    <div class="meta"><span class="duration">{{ project.duration }}</span></div>
+                    <div class="description">
+                        <p style="white-space: pre-line"> {{ project.description }}</p>
+                    </div>
                   </div>
-                  <div class="description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, maiores soluta obcaecati eius illum earum laudantium veniam nobis veritatis hic.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="content">
-                  <div class="header">Buck's Homebrew Stayaway</div>
-                  <div class="meta">
-                    <span class="price">$1000</span>
-                    <span class="stay">2 Weeks</span>
-                  </div>
-                  <div class="description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est possimus vitae blanditiis, quas omnis temporibus, sapiente iusto ad ipsa optio dicta unde eius vero?</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="content">
-                  <div class="header">Astrology Camp</div>
-                  <div class="meta">
-                    <span class="price">$1600</span>
-                    <span class="stay">6 Weeks</span>
-                  </div>
-                  <div class="description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum et aspernatur nam inventore magni nesciunt impedit asperiores esse sunt!</p>
-                  </div>
-                </div>
               </div>
             </div>
       </div>
