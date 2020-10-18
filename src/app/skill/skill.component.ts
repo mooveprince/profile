@@ -12,7 +12,7 @@ export class SkillComponent implements OnInit {
       name: 'Java',
       description: [
         'Enterprise application development using <b>Spring Framework</b>',
-        'Microservice development using <b>pring Boot and Spring Cloud</b>'
+        'Microservice development using <b>Spring Boot and Spring Cloud</b>'
       ]
     },
     {

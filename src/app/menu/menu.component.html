@@ -1,23 +1,5 @@
-<div class="ui large top fixed menu transition hidden">
-    <div class="ui container">
-      <a class="active item" href="#">Home</a>
-      <a class="item" href="#skill">Skills</a>
-      <a class="item" href="#project">Projects</a>
-      <a class="item" href="#side-project">Side Projects</a>
-      <a class="item" href="#resume">Resume</a>
-      <a class="item" href="#certificate">Certifications</a>
-      <a class="item" href="#contact">Contact</a>
-    </div>
-  </div>
-  
   <div class="ui vertical inverted sidebar menu left" [class.visible]="mobile== true" (click)="checkMobile()">
-    <a class="active item" href="#">Home</a>
-    <a class="item" href="#skill">Skills</a>
-    <a class="item" href="#project">Projects</a>
-    <a class="item" href="#side-project">Side Projects</a>
-    <a class="item" href="#resume">Resume</a>
-    <a class="item" href="#certificate">Certifications</a>
-    <a class="item" href="#contact">Contact</a>
+      <a *ngFor= "let menu of menus" class="item" href="{{menu.href}}"> {{ menu.name }} </a>
   </div>
 
 <div class="ui inverted vertical masthead center aligned segment">
@@ -36,13 +18,7 @@
         </div>
         
         <div class="right item">
-          <a class="active item" href="#">Home</a>
-          <a class="item" href="#skill">Skills</a>
-          <a class="item" href="#project">Projects</a>
-          <a class="item" href="#side-project">Side Projects</a>
-          <a class="item" href="#resume">Resume</a>
-          <a class="item" href="#certificate">Certifications</a>
-          <a class="item" href="#contact">Contact</a>
+            <a *ngFor= "let menu of menus" class="item" href="{{menu.href}}"> {{ menu.name }} </a>
         </div>
       </div>
     </div>
