@@ -11,7 +11,7 @@ export class SideProjectComponent implements OnInit {
   {
     name: 'TechFeedy - Webpage',
     description: 'A site to gather trending topics from multiple sites like <b>Hacker News, TechMeme, TechCrunch and Product Hunt</b>',
-    link: 'http://www.techfeed.info/',
+    link: 'http://www.techfeedy.mooveelan.com/',
     icon: 'assets/techfeed.png'
   },
   {
